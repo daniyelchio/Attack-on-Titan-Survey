@@ -10,42 +10,62 @@
 </head>
 
 <body class="background">
-        <header class = "header">
+    <header class="header">
         <h1 id="title">Attack on Titan Survey</h1>
-        <p id="description">This is the Eldian Survey Corps, thank you for taking the time to complete our survey about our show, Attack on Titan.<i> Shinzou wo Sasageyo!</i></p>
-        </header>
+        <p id="description">This is the Eldian Survey Corps, thank you for taking the time to complete our survey about
+            our show, Attack on Titan.<i> Shinzou wo Sasageyo!</i></p>
+    </header>
 
-        <main>
-            <form id="survey-form">
-                <label id = "name-label" for = "name">Name</label>
-                <input type="text" name="name" id="name" class="form=control" placeholder="Enter your name" required>
+    <main>
+        <form id="survey-form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form=control" placeholder="Enter your name" required>
 
-                <label id="email-label" for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
 
-                <label id="number-label" for="age">Age (Optional)</label>
-                <input type="number" name="age" id="number" class="form-control" placeholder="Age">
+            <label id="number-label" for="age">Age (Optional)</label>
+            <input type="number" name="age" id="number" class="form-control" placeholder="Age">
 
-                <p>Which option best describes the part of the show you are in?</p>
-                <select id="showPart" name="showPart" class="form-control" required>
-                    <option disabled selected value>Select current part</option>
-                    <option value="noStart">Have not started</option>
-                    <option value="wontStart">Do not plan to start</option>
-                    <option value="sn1">Season 1</option>
-                    <option value="sn2">Season 2</option>
-                    <option value="sn3">Season 3</option>
-                    <option value="sn4">Season 4</option>
-                    <option value="fin">Finished entirety</option>
-                </select>
+            <p>Which option best describes the part of the show you are in?</p>
+            <select id="showPart" name="showPart" class="form-control" required>
+                <option disabled selected value>Select current part</option>
+                <option value="noStart">Have not started</option>
+                <option value="wontStart">Do not plan to start</option>
+                <option value="sn1">Season 1</option>
+                <option value="sn2">Season 2</option>
+                <option value="sn3">Season 3</option>
+                <option value="sn4">Season 4</option>
+                <option value="fin">Finished entirety</option>
+            </select>
 
-                <p>Would you reccomend Attack on Titan to a friend? (On a scale of 1 to 5: where 1 being definitely no, 5 being absoutely yes)</p>
-                <label><input name="rec" value="1" type="radio" class="radio-input">1</label>
-                <label><input name="rec" value="2" type="radio" class="radio-input">2</label>
-                <label><input name="rec" value="3" type="radio" class="radio-input" checked>3</label>
-                <label><input name="rec" value="4" type="radio" class="radio-input">4</label>
-                <label><input name="rec" value="5" type="radio" class="radio-input">5</label>
+            <p>Would you reccomend Attack on Titan to a friend? (On a scale of 1 to 5: where 1 being definitely no, 5
+                being absoutely yes)</p>
+            <label><input name="rec" value="1" type="radio" class="radio-input">1</label>
+            <label><input name="rec" value="2" type="radio" class="radio-input">2</label>
+            <label><input name="rec" value="3" type="radio" class="radio-input" checked>3</label>
+            <label><input name="rec" value="4" type="radio" class="radio-input">4</label>
+            <label><input name="rec" value="5" type="radio" class="radio-input">5</label>
 
-        </main>
+            <p>Who are your favourite characters?</p>
+            <label><input name="prefer" value="Eren" type="checkbox" class="input-check" />Eren</label>
+            <label><input name="prefer" value="Mikasa" type="checkbox" class="input-check" />Mikasa</label>
+            <label><input name="prefer" value="Armin" type="checkbox" class="input-check" />Armin</label>
+            <label><input name="prefer" value="Levi" type="checkbox" class="input-check" />Levi</label>
+            <label><input name="prefer" value="Hange" type="checkbox" class="input-check" />Hange</label>
+            <label><input name="prefer" value="Annie" type="checkbox" class="input-check" />Annie</label>
+            <label><input name="prefer" value="Irwin" type="checkbox" class="input-check" />Irwin</label>
+            <label><input name="prefer" value="Other" type="checkbox" class="input-check" />Other</label>
+
+            <p>Any additonal comments, suggestions, and/or feedback</p>
+            <textarea id="comments" class="input=textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+
+        </form>
+
+    </main>
 </body>
 
 </html>
