@@ -25,10 +25,10 @@
             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
 
             <label id="number-label" for="age">Age (Optional)</label>
-            <input type="number" name="age" id="number" class="form-control" placeholder="Age">
+            <input type="number" name="age" id="number" class="form-control" placeholder="Age" min="0" max="130">
 
             <p>Which option best describes the part of the show you are in?</p>
-            <select id="showPart" name="showPart" class="form-control" required>
+            <select id="dropdown" name="showPart" class="form-control" required>
                 <option disabled selected value>Select current part</option>
                 <option value="noStart">Have not started</option>
                 <option value="wontStart">Do not plan to start</option>
@@ -64,8 +64,6 @@
             <button type="submit" id="submit" class="submit-button">Submit</button>
 
         </form>
-
     </main>
 </body>
-
 </html>
